@@ -7,16 +7,15 @@ class Tester {
 
         Scanner kbInput = new Scanner(System.in);
         System.out.println("Enter an integer.");
-        String integer = kbInput.next();
-        do {
-            try {
-                if (Integer.parseInt(integer) )
-                }
-            }catch(Exception e){
-                System.out.println("That is not an integer! Pick any whole number to proceed.");
-                firstNum = kbInput.next();
-            }
-        } while (firstNumInt < 1 || firstNumInt > 10);
+        int integer = kbInput.nextInt();
+        if (integer % 2 == 0) {
+            System.out.println("The integer " + integer + " is even.");
+        } else {
+            System.out.println("The integer " + integer + " is odd.");
+        }
+
+        main(null);
 
     }
+
 }
